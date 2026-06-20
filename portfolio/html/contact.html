@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <form method="post">
+
+    <fieldset>
+      <legend>Contact me</legend>
+      <table>
+        <tr>
+          <td><label for="first-name">First name:</label></td>
+          <td><input type="text" id="first-name" name="first_name" required></td>
+        </tr>
+
+        <tr>
+          <td><label for="last-name">Last name:</label></td>
+          <td><input type="text" id="last-name" name="last_name" required></td>
+        </tr>
+
+        <tr>
+          <td><label>Gender:</label></td>
+          <td>
+            <input type="radio" name="gender" value="male"> Male
+            <input type="radio" name="gender" value="female"> Female
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="email">Email:</label></td>
+          <td><input type="email" id="email" name="email" required></td>
+        </tr>
+      </table>
+    </fieldset>
+
+    <fieldset>
+      <legend>Services</legend>
+      <table>
+        <tr>
+          <td><label>Skills:</label></td>
+          <td>
+            <input type="checkbox" name="skills" value="Web Development"> Web Development
+            <input type="checkbox" name="skills" value="AI/ML"> AI/ML
+            <input type="checkbox" name="skills" value="Backend"> Backend
+          </td>
+        </tr>
+      </table>
+    </fieldset>
+
+    <fieldset>
+      <legend>Reason of Contact</legend>
+      <table>
+        <tr>
+          <td><label for="contact-reason">Contact-reason:</label></td>
+          <td>
+            <select id="contact-reason" name="contact-reason">
+              <option>Job</option>
+              <option>Projects</option>
+              <option>Thesis</option>
+            </select>
+          </td>
+        </tr>
+      </table>
+    </fieldset>
+
+    <fieldset>
+      <legend>Book slot</legend>
+      <table>
+        <tr>
+          <td><label for="datetime-local">Date:</label></td>
+          <td><input type="datetime-local" id="datetime-local" name="booking_date"></td>
+        </tr>
+      </table>
+    </fieldset>
+
+    <table>
+      <tr>
+        <td>
+          <input type="submit" value="Submit">
+        </td>
+        <td>
+          <input type="reset" value="Reset">
+        </td>
+      </tr>
+    </table>
+
+  </form>
+
+</body>
+</html>
